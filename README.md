@@ -68,14 +68,109 @@ elif mark >= 50 and mark <= 59:
 elif mark >= 40 and mark <= 49:
     print("C")    
 elif mark >= 33 and mark <= 39:
-    print("D")    
-elif mark >= 0 and mark <= 32:
     print("F")
 else:
     print(f"{mark} is invaild !")        
 
 
-    
+                                                       #list.
+#1.
+my_list = [1, 2, 3, 4, 5]
+reversed_list = my_list[::-1]
+print(reversed_list)
+#2.
+my_list = [5, 2, 8, 1, 3, 7, 4]
+
+if len(my_list) < 2:
+    print("List should have at least two elements.")
+else:
+    smallest = float('inf')
+    second_smallest = float('inf')
+     for num in my_list:
+        if num < smallest:
+            second_smallest = smallest
+            smallest = num
+        elif num < second_smallest and num != smallest:
+            second_smallest = num
+     print("Second smallest element:", second_smallest)
+#3.
+my_list = [1, 2, 3, 2, 1]
+
+if my_list == my_list[::-1]:
+    print("The list is a palindrome.")
+else:
+    print("The list is not a palindrome.")
+#4.
+#5.
+                              #tuples.
+#1.
+tuple1 = (1,2,3,4,5)
+tuple2 = (6,7,8,9)
+Concatenate_tuple = tuple1+tuple2
+print(Concatenate_tuple)
+#2.
+my_tuple = (1, 2, 3, 4, 5)
+element_to_find = 3
+index_of_element = my_tuple.index(element_to_find)
+print(f"The index of {element_to_find} is: {index_of_element}")
+#3.
+my_tuple = (1, 2, 3, 4, 5)
+element_to_check = 3
+if element_to_check in my_tuple:
+    print(f"{element_to_check} exists in the tuple.")
+else:
+    print(f"{element_to_check} does not exist in the tuple.")
+#4.
+tuple1 = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+new_tuple = tuple1[2:3]
+print("Tuple1:", tuple1)
+print(new_tuple)
+#5.
+my_tuple = (2, 3, 4, 5)
+product = 1
+for element in my_tuple:
+    product *= element
+print("Tuple:", my_tuple)
+print("Product of elements:", product)
+                                          #SETS.
+#1.
+A = {1,2,3,4,5,6}
+B = {1,2,30}
+print(A.union(B))
+#2.
+set1 = {1, 2, 3, 4, 5}
+set2 = {4, 5, 6, 7, 8}
+print(set1.difference(set2))
+#3.
+#4.
+set1 = {1, 2, 3, 4, 5}
+set2 = {6, 7, 8}
+
+print(set1.isdisjoint(set2))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   
